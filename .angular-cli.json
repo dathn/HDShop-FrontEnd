@@ -18,10 +18,26 @@
         "testTsconfig": "tsconfig.spec.json",
         "prefix": "app",
         "styles": [
-            "../src/assets/css/vendor.css",
-            "../src/assets/css/auth.css"
+            "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+
+            "../node_modules/node-waves/dist/waves.min.css",
+            "../node_modules/animate.css/animate.min.css",
+            "../node_modules/morris.js06/morris.css",
+
+            "../src/assets/css/themes/all-themes.css",
+            "../src/assets/css/style.css"
         ],
-        "scripts": [],
+        "scripts": [
+            "../node_modules/jquery/dist/jquery.min.js",
+            "../node_modules/jquery-validation/dist/jquery.validate.min.js",
+            "../node_modules/jquery-slimscroll/jquery.slimscroll.min.js",
+
+            "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+            "../node_modules/bootstrap-select/js/bootstrap-select.js",
+
+            "../node_modules/node-waves/dist/waves.min.js",
+            "../node_modules/morris.js06/morris.min.js"
+        ],
         "environmentSource": "environments/environment.ts",
         "environments": {
             "dev": "environments/environment.ts",
