@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "adminbsb-materialdesign": "^1.0.5",
+    "alertifyjs": "^1.11.0",
     "animate.css": "^3.6.1",
     "bootstrap": "^3.3.7",
     "bootstrap-select": "^1.12.4",
@@ -32,6 +33,7 @@
     "morris.js06": "^0.6.2",
     "node-waves": "^0.7.6",
     "rxjs": "^5.5.6",
+    "sweetalert2": "^7.15.1",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
