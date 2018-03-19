@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, ElementRef } from '@angular/core';
+import * as $ from 'jquery';
 @Component({
   selector: 'app-top-menu',
   templateUrl: './top-menu.component.html',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopMenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit() {
+
   }
 
 }

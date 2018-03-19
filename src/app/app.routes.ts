@@ -1,4 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -12,11 +13,17 @@ const routes: Routes = [
   },
   {
     path: 'system',
-    loadChildren: './system/system.module#SystemModule'
+    loadChildren: './system/system.module#SystemModule', canActivate: [AuthGuard]
   },
   {
-    path: 'system/dashboard',
-    loadChildren: './system/dashboard/dashboard.module#DashboardModule'
+    path: '*',
+    redirectTo: 'system/404',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    redirectTo: 'system/404',
+    pathMatch: 'full'
   }
 ];
 
