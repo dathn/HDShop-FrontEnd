@@ -29,6 +29,10 @@ const systemRoutes: Routes = [
         loadChildren: './product/product.module#ProductModule'
       },
       {
+        path: 'product-category',
+        loadChildren: './product-category/product-category.module#ProductCategoryModule'
+      },
+      {
         path: '404',
         loadChildren: './error-page/error-page.module#ErrorPageModule'
       }

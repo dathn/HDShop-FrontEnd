@@ -13,6 +13,7 @@ import { NotificationService } from './core/services/notification.service';
 import { HttpModule, Http } from '@angular/http';
 import { AuthGuard } from './core/guards/auth.guard';
 
+import { PaginationModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AuthGuard } from './core/guards/auth.guard';
   imports: [
     BrowserModule,
     HttpModule,
+    PaginationModule.forRoot(),
     AppRoutes
   ],
   providers: [

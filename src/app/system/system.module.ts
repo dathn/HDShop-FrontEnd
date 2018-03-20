@@ -8,11 +8,24 @@ import { SidebarMenuComponent } from '../shared/sidebar-menu/sidebar-menu.compon
 
 import { SystemRoutes } from './system.routes';
 
+import { DataService } from '../core/services/data.service';
+import { UtilityService } from '../core/services/utility.service';
+import { NotificationService } from '../core/services/notification.service';
+
+
+
+
 @NgModule({
   imports: [
     CommonModule,
     SystemRoutes
   ],
+  providers: [
+    DataService,
+    UtilityService,
+    NotificationService
+  ]
+  ,
   declarations: [
     SystemComponent,
     TopMenuComponent,
